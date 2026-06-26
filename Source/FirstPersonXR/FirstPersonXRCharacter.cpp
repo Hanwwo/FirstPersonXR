@@ -102,8 +102,8 @@ void AFirstPersonXRCharacter::DoMove(float Right, float Forward)
 	if (GetController())
 	{
 		// pass the move inputs
-		AddMovementInput(GetActorRightVector(), Right);
-		AddMovementInput(GetActorForwardVector(), Forward);
+		AddMovementInput(GetActorRightVector(), Right);     // vector와 scale
+		AddMovementInput(GetActorForwardVector(), Forward);  //right와 forward는 -1.0~1.0(보통)
 	}
 }
 
